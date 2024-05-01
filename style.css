@@ -2,7 +2,5 @@ body
 {
     font-family: 'Segoe UI', Arial, Verdana, sans-serif;
     font-size: 1em;
-    background-image: url("media/background.jpg");
-    background-size:auto;
-    
+    background-image: url("media/background.jpg");   
 }
