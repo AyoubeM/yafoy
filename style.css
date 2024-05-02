@@ -1,39 +1,102 @@
-/* Styles communs à toutes les pages */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Segoe UI", Arial, Verdana, sans-serif;
+    font-size: 1em;
+    background-image: url('images/Circuit_informatique_1.jpg');
+    background-size: 30%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    height: 100%;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+.header, .footer {
+    width: 80%;
+    padding: 0.2em 1em;
+    margin: 0.2em auto;
+    border: 0.2em solid black;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: cornsilk;
 }
 
-header h1 {
-    margin: 0;
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.sommaire, .chapeau-pp {
+    width: 80%;
+    padding: 0.2em 1em;
+    margin: 0.2em auto;
+    border: 0.2em solid black;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2em;
+    text-align: justify;
+    background-color: cornsilk;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+.sommaire {
+    flex: 1;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.chapeau-pp {
+    flex: 3;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.tableau {
+    width: 80%;
+    margin: 0.2em auto;
+    border-collapse: collapse;
+    border: 3px solid blue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
 }
 
-main {
-    padding: 20px;
+.tableau th, .tableau td {
+    padding: 0.5em;
 }
+
+.tableau th {
+    background-color: lightgreen;
+}
+
+.tableau td:hover {
+    background-color: yellowgreen;
+    color: blue;
+}
+
+.tableau tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+.tableau tbody tr:nth-child(odd) {
+    background-color: #ccc;
+}
+
+.footer {
+    color: mediumblue;
+    background-image: linear-gradient(to top, #eeeeee, #990044);
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+}
+
+h2 {
+    color: darkgreen;
+    font-size: 1.5em;
+    border: 0.2em solid gold;
+    border-radius: 10px;
+    margin: 0.5em;
+    text-align: center;
+    background-color: pink;
+}
+
+/* Ajout des styles supplémentaires basés sur votre CSS */
+/* ... */
