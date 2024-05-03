@@ -20,7 +20,7 @@ body {
     font-size: 1.2em;
     text-align: center;
     background-image: url('media/banniere.jpg');
-    position: static;
+    position: static;   
 }
 
 .content {
@@ -29,7 +29,7 @@ body {
     min-height: 100vh;
 }
 
-.sommaire, .chapeau-pp {
+.Resumer, .chapeau-pp {
     width: 80%;
     padding: 0.2em 1em;
     margin: 0.2em auto;
@@ -41,8 +41,8 @@ body {
     background-color: cornsilk;
 }
 
-.sommaire {
-    flex: 1;
+.Resumer {
+    flex: 1;    
     position: relative;
     width: 80%;
 }
@@ -94,7 +94,7 @@ h1 {
     font-size: 3em;
 }
 
-h2 {
+h2, h3{
     color: darkgreen;
     font-size: 1.5em;
     border: 0.2em solid gold;
@@ -103,9 +103,13 @@ h2 {
     text-align: center;
     background-color: pink;
 }
+h4
+{
+    text-align: center;
+}
 
-
-h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+h2:hover, h3:hover
+{
     color: white;
     transform-origin: bottom left;
     transform: translate(1em);
