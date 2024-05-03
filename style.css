@@ -18,7 +18,7 @@ body {
     font-family: 'Pacifico', cursive;
     font-size: 1.2em;
     text-align: center;
-    background-image:url('media/back.jpg') ;
+    background-image:url('media/banniere.jpg') ;
     position:static;
 }
 
@@ -85,7 +85,7 @@ body {
 }
 
 h1 {
-    color: white;
+    color: black;
     font-size: 3em;
 }
 
