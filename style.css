@@ -1,7 +1,8 @@
 body {
     font-family: "Segoe UI", Arial, Verdana, sans-serif;
     font-size: 1em;
-    background-image: url('media/back.jpg');
+    /* background-image: url('media/back.jpg'); */
+    background-color: cornsilk;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -18,8 +19,8 @@ body {
     font-family: 'Pacifico', cursive;
     font-size: 1.2em;
     text-align: center;
-    background-image:url('media/banniere.jpg') ;
-    position:static;
+    background-image: url('media/banniere.jpg');
+    position: static;
 }
 
 .content {
@@ -42,42 +43,46 @@ body {
 
 .sommaire {
     flex: 1;
+    position: relative;
+    width: 80%;
 }
 
 .chapeau-pp {
     flex: 3;
 }
 
-.tableau {
-    width: 80%;
-    margin: 0.2em auto;
+/* Styles pour le tableau */
+table,
+th,
+td,
+caption {
     border-collapse: collapse;
     border: 3px solid blue;
+    padding: 0.5em;
+    margin: auto;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: red;
 }
 
-.tableau th, .tableau td {
-    padding: 0.5em;
-}
-
-.tableau th {
+thead,
+tfoot {
     background-color: lightgreen;
 }
 
-.tableau td:hover {
+td:hover {
     background-color: yellowgreen;
     color: blue;
 }
 
-.tableau tbody tr:nth-child(even) {
+tbody tr:nth-child(even) {
     background-color: #eee;
 }
 
-.tableau tbody tr:nth-child(odd) {
+tbody tr:nth-child(odd) {
     background-color: #ccc;
 }
+
 
 .footer {
     color: mediumblue;
@@ -99,5 +104,9 @@ h2 {
     background-color: pink;
 }
 
-/* Ajout des styles supplémentaires basés sur votre CSS */
-/* ... */
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    color: white;
+    transform-origin: bottom left;
+    transform: translate(1em);
+}
