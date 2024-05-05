@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #f0f0f0;
   }
   .webtoon-reader {
     display: flex;
@@ -10,8 +10,36 @@ body, html {
     padding: 20px;
   }
   .webtoon-reader img {
-    max-width: 100%;
+    max-width: 50%;
     margin-bottom: 0;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    height: auto;
   }
+  
+ /* Votre style CSS existant */
+/* ... */
+
+/* Style pour centrer la navigation en haut de la page */
+.navigation {
+    width: 100%; /* Assurez-vous que la navigation s'étend sur toute la largeur */
+    position: fixed; /* Fixe la navigation en haut de la page */
+    top: 0; /* Positionne la navigation en haut de la page */
+    left: 0; /* Alignez la navigation à gauche */
+    display: flex;
+    justify-content: center; /* Centre les éléments de navigation horizontalement */
+    padding: 10px 0; /* Ajoutez du padding pour un meilleur design */
+    background-color: #fff; /* Mettez une couleur de fond pour la navigation */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optionnel: ajoute une ombre pour un effet de profondeur */
+    z-index: 1000; /* Assurez-vous que la navigation reste au-dessus des autres éléments */
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  select, input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }     
   
