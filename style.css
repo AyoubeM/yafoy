@@ -1,9 +1,9 @@
 body {
     font-family: "Segoe UI", Arial, Verdana, sans-serif;
     font-size: 1em;
-    /* background-image: url('media/back.jpg'); */
+    background-image: url('media/background.jpg');
     background-color: cornsilk;
-    background-size: cover;
+    background-size:15%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,6 +20,7 @@ body {
     font-size: 1.2em;
     text-align: center;
     background-image: url('media/banniere.jpg');
+    background-size: cover;
     position: static;   
 }
 
@@ -90,7 +91,7 @@ tbody tr:nth-child(odd) {
 }
 
 h1 {
-    color: black;
+    color: red;
     font-size: 3em;
 }
 
