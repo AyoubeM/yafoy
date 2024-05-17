@@ -1,6 +1,117 @@
-body
-{
-    font-family: 'Segoe UI', Arial, Verdana, sans-serif;
+body {
+    font-family: "Segoe UI", Arial, Verdana, sans-serif;
     font-size: 1em;
-    background-image: url("media/back.jpg");   
+    background-image: url('media/background.jpg');
+    background-color: cornsilk;
+    background-size:15%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.header, .footer {
+    width: 80%;
+    padding: 0.2em 1em;
+    margin: 0.2em auto;
+    border: 0.2em solid black;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2em;
+    text-align: center;
+    background-image: url('media/banniere.jpg');
+    background-size: cover;
+    position: static;   
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Resumer, .chapeau-pp {
+    width: 80%;
+    padding: 0.2em 1em;
+    margin: 0.2em auto;
+    border: 0.2em solid black;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2em;
+    text-align: justify;
+    background-color: cornsilk;
+}
+
+.Resumer {
+    flex: 1;    
+    position: relative;
+    width: 80%;
+}
+
+.chapeau-pp {
+    flex: 3;
+}
+
+/* Styles pour le tableau */
+table,
+th,
+td,
+caption {
+    border-collapse: collapse;
+    border: 3px solid blue;
+    padding: 0.5em;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+thead,
+tfoot {
+    background-color: lightgreen;
+}
+
+td:hover {
+    background-color: yellowgreen;
+    color: blue;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ccc;
+}
+
+
+.footer {
+    color: mediumblue;
+    background-image: linear-gradient(to top, #eeeeee, #990044);
+}
+
+h1 {
+    color: red;
+    font-size: 3em;
+}
+
+h2, h3{
+    color: darkgreen;
+    font-size: 1.5em;
+    border: 0.2em solid gold;
+    border-radius: 10px;
+    margin: 0.5em;
+    text-align: center;
+    background-color: pink;
+}
+h4
+{
+    text-align: center;
+}
+
+h2:hover, h3:hover
+{
+    color: white;
+    transform-origin: bottom left;
+    transform: translate(1em);  
 }
